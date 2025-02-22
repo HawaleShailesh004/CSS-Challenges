@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3rem;
+    width: 1440px;
+    margin: auto;
+
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+p,
+li,
+th,
+td {
+    font-family: "Outfit";
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+
+
+.hero-img {
+    width: 100%;
+    height: 40rem;
+    background-image: url("/recipe-page-main/assets/images/image-omelette.jpeg");
+    background-size: cover;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+
+
+hr {
+    margin: 3rem 0 3rem 0;
+    width: 100%;
+    border: 0.7px solid hsl(30, 18%, 87%);
+}
+
+#title-txt {
+    margin: 1rem 0rem 2rem 0rem;
+    font-size: 3rem;
+    color: hsl(24, 5%, 18%);
+    font-family: "Young Serif";
+}
+
+#desc-txt {
+    font-size: 1.5rem;
+}
+
+.section-head {
+
+    font-size: 3rem;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1.5rem;
+    font-family: "Young Serif";
+
+}
+
+.prepare-time {
+    padding: 5rem;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 1rem;
+
+    & h1 {
+        font-size: 2rem;
+        color: hsl(332, 51%, 32%);
+        font-family: "Young Serif";
+    }
+
+
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.ingredients {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.u-list {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-top: 1rem;
+
+    & li {
+        padding-left: 1.5rem;
+    }
+}
+
+
+
+.instrctions {
+    margin-bottom: 3rem;
+}
+
+.nutrition {
+
+
+
+    & th,
+    td {
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+        border-collapse: collapse;
+    }
+
+    & table {
+        width: 100%;
+        margin-bottom: 2rem;
+
+
+        & td,
+        th {
+            height: 4rem;
+
+            text-align: left;
+            padding-left: 4rem;
+
+        }
+
+        & td {
+            font-weight: 700;
+            color: hsl(14, 45%, 36%);
+        }
+
+        & th {
+            color: hsl(30, 10%, 34%);
+            width: 40%;
+            font-weight: 400;
+        }
+
+
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    body {
+        padding: 0;
+        width: 375px;
+        margin: auto;
+    }
+
+    .hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 11rem;
+        background-image: url("/recipe-page-main/assets/images/image-omelette.jpeg");
+        background-size: cover;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .main-container {
+        padding: 1.5rem;
+    }
+
+    #title-txt {
+        font-size: 2rem;
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    #desc-txt {
+        font-size: 16px;
+        line-height: 1.3rem;
+    }
+
+    .section-head {
+        font-size: 1.7rem;
+    }
+
+    td,
+    th,
+    p,
+    li {
+        font-size: 16px;
+        color: hsl(30, 10%, 34%);
+
+    }
+
+    hr {
+        margin: 1rem 0 1rem 0;
+        width: 100%;
+        border: 0.7px solid hsl(30, 18%, 87%);
+    }
+
+    .prepare-time {
+        padding: 1.5rem;
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 1rem;
+        margin-top: 1rem;
+
+        & h1 {
+            font-size: 1.2rem;
+            color: hsl(332, 51%, 32%);
+            font-family: "Young Serif";
+        }
+    }
+
+    .u-list {
+
+        padding-left: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin-top: 1rem;
+
+        & li {
+            padding-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+    }
+
+    .nutrition {
+
+        & table {
+
+            margin-top: 1.7rem;
+
+            & td,
+            th {
+                height: 3rem;
+                text-align: left;
+                padding-left: 2rem;
+            }
+        }
+    }
+
+}
