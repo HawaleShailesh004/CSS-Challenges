@@ -167,7 +167,7 @@ li::marker {
     .hero-img {
         width: 100%;
         height: 11rem;
-        background-image: url("/recipe-page-main/assets/images/image-omelette.jpeg");
+        background-image: url("./assets/images/image-omelette.jpeg");
         background-size: cover;
         border-radius: 0;
         -webkit-border-radius: 0;
