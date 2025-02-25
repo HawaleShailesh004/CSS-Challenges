@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1447px;
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter";
+}
+
+.main-container{
+    margin: 3rem auto;
+    width: 22rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 12%);
+    padding: 1rem;
+}
+
+.profile-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#profile-image{
+    width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.name{
+    font-size: 1.15rem;
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.location{
+    font-size: 0.7rem;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.description{
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+    color: white;
+    font-weight: 300;
+}
+
+.social-links-container{
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-link{
+    width: 90%;
+    background-color: hsl(0, 0%, 20%);
+    font-size: 0.75rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+}
+
+@media screen and (max-width: 600px){
+    
+    body{
+        width: 375px;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .main-container{
+        width: 80%;
+        margin: 2rem 0 2rem 0;
+        padding: 0.5rem;
+    }
+
+    #profile-image{
+        width: 4rem;
+    }
+
+
+    .name{
+        font-size: 1rem;
+    }
+
+
+}
